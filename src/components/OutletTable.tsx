@@ -65,9 +65,11 @@ const OutletTable = () => (
       </Header>
       <Table attached="bottom" celled>
         <Table.Header>
-          {eDMRHeaders.map((heading) => (
-            <Table.HeaderCell>{heading}</Table.HeaderCell>
-          ))}
+          <Table.Row>
+            {eDMRHeaders.map((heading) => (
+              <Table.HeaderCell>{heading}</Table.HeaderCell>
+            ))}
+          </Table.Row>
         </Table.Header>
 
         <Table.Body>
